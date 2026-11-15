@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Mohamed Achraf Azidan</title>
+    <meta name="description" content="Welkom op de website van Mohamed Achraf Azidan, IT-student Systeem- en netwerkbeheer." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="flex flex-col min-h-screen text-gray-800">
+    
+    <a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-blue-800 z-50 shadow-md">Ga naar de inhoud</a>
+    <header class="max-w-6xl mx-auto px-4 py-6 flex flex-wrap items-center justify-between border-b border-gray-200">
+      <a href="index.html" class="flex items-center gap-3 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700 rounded-sm">
+        <img src="images/logo.png" alt="Logo" class="h-10 w-auto rounded object-contain" />
+      </a>
+      <input type="checkbox" id="menu-knop" class="peer sr-only" />
+      <label for="menu-knop" tabindex="0" class="cursor-pointer rounded-lg border border-gray-300 bg-white px-3 py-2 text-gray-700 hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-blue-700 md:hidden">
+        Menu
+      </label>
+      <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto mt-4 md:mt-0">
+        <ul class="flex flex-col md:flex-row md:gap-1">
+          <li><a href="index.html" class="block px-4 py-2 rounded-lg bg-blue-100 text-blue-800 font-semibold focus-visible:outline-2 focus-visible:outline-blue-700">Home</a></li>
+          <li><a href="portfolio.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-2 focus-visible:outline-blue-700 transition-colors">Projecten</a></li>
+          <li><a href="contact.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-2 focus-visible:outline-blue-700 transition-colors">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
+      <main id="inhoud" class="lg:col-span-2 flex flex-col gap-8">
+        <section class="bg-[url(../images/sfeerbeeld-1.jpg)] bg-cover bg-center bg-slate-800 bg-blend-overlay px-8 py-24 rounded-2xl shadow-sm border border-gray-200 text-center flex flex-col items-center justify-center">
+          <h1 class="mb-4 text-4xl md:text-5xl font-bold tracking-tight text-white drop-shadow-md">Welkom op mijn website</h1>
+          <p class="mb-8 text-lg text-gray-200 max-w-lg drop-shadow-sm">Ik ben Mohamed Achraf Azidan, student Systeem- en netwerkbeheer. Bekijk mijn realisaties en ontdek wat ik kan.</p>
+          <a href="portfolio.html" class="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700 transition-colors shadow-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400">
+            Bekijk mijn projecten
+          </a>
+        </section>
+      </main>
+
+      <aside class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm h-fit flex flex-col gap-8">
+        <div>
+            <div class="flex items-center gap-4 mb-4">
+              <img src="images/profielfoto.jpg" alt="Portretfoto van Mohamed Achraf Azidan" width="400" height="400" class="size-16 rounded-full object-cover shadow-sm ring-2 ring-gray-100" />
+              <h2 class="font-bold text-xl text-gray-900">Over mij</h2>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Hallo, mijn naam is Mohamed Achraf Azidan. Ik ben een IT-student met interesse in cybersecurity. Op mijn portfolio laat ik zien aan welke projecten ik tijdens mijn opleiding werk en welke kennis en vaardigheden ik daarbij ontwikkel.
+            </p>
+        </div>
+      </aside>
+    </div>
+
+    
+    <footer class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between py-8 border-t border-gray-200 text-sm text-gray-500 mt-auto">
+      <p>&copy; 2026 Mohamed Achraf Azidan</p>
+    </footer>
+
+  </body>
+</html>

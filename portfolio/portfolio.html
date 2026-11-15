@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projecten - Mohamed Achraf Azidan</title>
+    <meta name="description" content="Een overzicht van 6 gerealiseerde IT- en netwerkprojecten." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="flex flex-col min-h-screen text-gray-800">
+    
+    <a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-blue-800 z-50 shadow-md">Ga naar de inhoud</a>
+    <header class="max-w-6xl mx-auto px-4 py-6 flex flex-wrap items-center justify-between border-b border-gray-200">
+      <a href="index.html" class="flex items-center gap-3 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700 rounded-sm">
+        <img src="images/logo.png" alt="Logo" class="h-10 w-auto rounded object-contain" />
+      </a>
+      <input type="checkbox" id="menu-knop" class="peer sr-only" />
+      <label for="menu-knop" tabindex="0" class="cursor-pointer rounded-lg border border-gray-300 bg-white px-3 py-2 text-gray-700 hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-blue-700 md:hidden">
+        Menu
+      </label>
+      <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto mt-4 md:mt-0">
+        <ul class="flex flex-col md:flex-row md:gap-1">
+          <li><a href="index.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-2 focus-visible:outline-blue-700 transition-colors">Home</a></li>
+          <li><a href="portfolio.html" class="block px-4 py-2 rounded-lg bg-blue-100 text-blue-800 font-semibold focus-visible:outline-2 focus-visible:outline-blue-700">Projecten</a></li>
+          <li><a href="contact.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-2 focus-visible:outline-blue-700 transition-colors">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-8 w-full">
+      <main id="inhoud" class="lg:col-span-3">
+        <h1 class="text-3xl font-bold mb-6 text-gray-900 tracking-tight">Mijn projecten</h1>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <article class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow flex flex-col">
+              <img src="images/sfeerbeeld-1.jpg" alt="Servers en netwerkapparatuur" width="1200" height="800" class="aspect-video w-full object-cover border-b border-gray-100" />
+              <div class="p-5 flex flex-col flex-1">
+                <h2 class="text-lg font-bold mb-2 text-gray-900">Thuisnetwerk met VLAN's</h2>
+                <p class="text-gray-600 text-sm mb-6 flex-1">Een veilig netwerk opgesplitst in gescheiden segmenten voor werk, IoT en gasten.</p>
+                <a href="project-1.html" class="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 w-fit transition-colors">
+                    Lees meer
+                </a>
+              </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow flex flex-col">
+              <img src="images/sfeerbeeld-2.jpg" alt="Server rack met netwerkkabels in datacentrum" width="1200" height="800" class="aspect-video w-full object-cover border-b border-gray-100" />
+              <div class="p-5 flex flex-col flex-1">
+                <h2 class="text-lg font-bold mb-2 text-gray-900">Linux Backupserver</h2>
+                <p class="text-gray-600 text-sm mb-6 flex-1">Een geautomatiseerde NAS-oplossing gebouwd op AlmaLinux met rsync back-up scripts.</p>
+                <a href="project-2.html" class="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 w-fit transition-colors">
+                    Lees meer
+                </a>
+              </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow flex flex-col">
+              <img src="images/sfeerbeeld-3.jpg" alt="Werkplek met meerdere beeldschermen en code" width="1200" height="800" class="aspect-video w-full object-cover border-b border-gray-100" />
+              <div class="p-5 flex flex-col flex-1">
+                <h2 class="text-lg font-bold mb-2 text-gray-900">Active Directory Setup</h2>
+                <p class="text-gray-600 text-sm mb-6 flex-1">Volledige configuratie van een Windows Server 2022 domein met GPO's en gebruikersbeheer.</p>
+                <a href="project-3.html" class="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 w-fit transition-colors">
+                    Lees meer
+                </a>
+              </div>
+            </article>
+            
+            <article class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow flex flex-col">
+              <div class="aspect-video w-full bg-slate-200 flex items-center justify-center text-slate-400 border-b border-gray-100">
+                Project 4 Foto komt hier
+              </div>
+              <div class="p-5 flex flex-col flex-1">
+                <h2 class="text-lg font-bold mb-2 text-gray-900">Database Migratie</h2>
+                <p class="text-gray-600 text-sm mb-6 flex-1">Veilige migratie van bedrijfsdata naar een nieuwe SQL-omgeving zonder downtime.</p>
+                <a href="project-4.html" class="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 w-fit transition-colors">
+                    Lees meer
+                </a>
+              </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow flex flex-col">
+              <div class="aspect-video w-full bg-slate-200 flex items-center justify-center text-slate-400 border-b border-gray-100">
+                 Project 5 Foto komt hier
+              </div>
+              <div class="p-5 flex flex-col flex-1">
+                <h2 class="text-lg font-bold mb-2 text-gray-900">PowerShell Automation</h2>
+                <p class="text-gray-600 text-sm mb-6 flex-1">Custom AZMO scripts geschreven om repetitieve administratieve taken op Windows 11 clients te automatiseren.</p>
+                <a href="project-5.html" class="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 w-fit transition-colors">
+                    Lees meer
+                </a>
+              </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow flex flex-col">
+              <div class="aspect-video w-full bg-slate-200 flex items-center justify-center text-slate-400 border-b border-gray-100">
+                 Project 6 Foto komt hier
+              </div>
+              <div class="p-5 flex flex-col flex-1">
+                <h2 class="text-lg font-bold mb-2 text-gray-900">FortiWeb WAF Configuratie</h2>
+                <p class="text-gray-600 text-sm mb-6 flex-1">Web Application Firewall geconfigureerd ter beveiliging van een lokaal gehoste webapplicatie.</p>
+                <a href="project-6.html" class="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 w-fit transition-colors">
+                    Lees meer
+                </a>
+              </div>
+            </article>
+        </div>
+      </main>
+
+      <aside class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm h-fit flex flex-col gap-8">
+        <div>
+            <div class="flex items-center gap-4 mb-4">
+              <img src="images/profielfoto.jpg" alt="Portretfoto" width="400" height="400" class="size-16 rounded-full object-cover shadow-sm ring-2 ring-gray-100" />
+              <h2 class="font-bold text-xl text-gray-900">Over mij</h2>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Ik werk graag aan praktische IT-opdrachten waarbij ik nieuwe technologieën kan leren en toepassen. Tijdens mijn opleiding bouw ik stap voor stap ervaring op met verschillende projecten. Met mijn portfolio wil ik mijn werk overzichtelijk verzamelen en tonen hoe ik mezelf verder ontwikkel, zowel door projecten tijdens mijn opleiding als door persoonlijke projecten.
+            </p>
+        </div>
+      </aside>
+    </div>
+
+    
+    <footer class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between py-8 border-t border-gray-200 text-sm text-gray-500 mt-auto">
+      <p>&copy; 2026 Mohamed Achraf Azidan</p>
+    </footer>
+
+  </body>
+</html>

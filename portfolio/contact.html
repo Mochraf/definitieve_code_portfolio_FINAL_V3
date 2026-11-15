@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Mohamed Achraf Azidan</title>
+    <meta name="description" content="Neem contact op met Mohamed Achraf Azidan voor een stage of IT-project." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="flex flex-col min-h-screen text-gray-800">
+    
+    <a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-blue-800 z-50 shadow-md">Ga naar de inhoud</a>
+    <header class="max-w-6xl mx-auto px-4 py-6 flex flex-wrap items-center justify-between border-b border-gray-200">
+      <a href="index.html" class="flex items-center gap-3 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700 rounded-sm">
+        <img src="images/logo.png" alt="Logo" class="h-10 w-auto rounded object-contain" />
+      </a>
+      <input type="checkbox" id="menu-knop" class="peer sr-only" />
+      <label for="menu-knop" tabindex="0" class="cursor-pointer rounded-lg border border-gray-300 bg-white px-3 py-2 text-gray-700 hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-blue-700 md:hidden">
+        Menu
+      </label>
+      <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto mt-4 md:mt-0">
+        <ul class="flex flex-col md:flex-row md:gap-1">
+          <li><a href="index.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-2 focus-visible:outline-blue-700 transition-colors">Home</a></li>
+          <li><a href="portfolio.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-2 focus-visible:outline-blue-700 transition-colors">Projecten</a></li>
+          <li><a href="contact.html" class="block px-4 py-2 rounded-lg bg-blue-100 text-blue-800 font-semibold focus-visible:outline-2 focus-visible:outline-blue-700">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
+      <main id="inhoud" class="lg:col-span-2">
+        <h1 class="text-3xl font-bold mb-2 text-gray-900 tracking-tight">Neem contact op</h1>
+        <p class="mb-8 text-gray-600">Stel je vraag over een project of vacature. Velden met een <span class="font-bold text-red-600" aria-hidden="true">*</span> zijn verplicht.</p>
+        
+        <article class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm">
+            <form name="contact" method="POST" data-netlify="true" class="grid gap-6 md:grid-cols-2">
+                <div class="md:col-span-1">
+                    <label for="naam" class="block text-sm font-semibold text-gray-900 mb-1">Naam <span class="text-red-600" aria-hidden="true">*</span></label>
+                    <input type="text" id="naam" name="naam" autocomplete="name" required 
+                        class="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-2.5 text-gray-900 focus-visible:outline-2 focus-visible:outline-offset-0 focus-visible:outline-blue-600 transition-colors">
+                </div>
+                
+                <div class="md:col-span-1">
+                    <label for="email" class="block text-sm font-semibold text-gray-900 mb-1">E-mailadres <span class="text-red-600" aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="mail-hulp" 
+                        class="peer w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-2.5 text-gray-900 focus-visible:outline-2 focus-visible:outline-offset-0 focus-visible:outline-blue-600 user-invalid:border-red-600 user-invalid:focus-visible:outline-red-600 transition-colors">
+                    <p id="mail-hulp" class="mt-1.5 text-xs text-gray-500">Vul een e-mailadres in zoals naam@voorbeeld.be.</p>
+                    <p class="mt-1.5 hidden text-xs font-semibold text-red-600 peer-user-invalid:block">Dit e-mailadres klopt niet. Vul het in zoals naam@voorbeeld.be.</p>
+                </div>
+                
+                <div class="md:col-span-2">
+                    <label for="bericht" class="block text-sm font-semibold text-gray-900 mb-1">Je bericht <span class="text-red-600" aria-hidden="true">*</span></label>
+                    <textarea id="bericht" name="bericht" rows="5" required minlength="10" aria-describedby="bericht-hulp" 
+                        class="peer w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 text-gray-900 focus-visible:outline-2 focus-visible:outline-offset-0 focus-visible:outline-blue-600 user-invalid:border-red-600 user-invalid:focus-visible:outline-red-600 transition-colors"></textarea>
+                    <p id="bericht-hulp" class="mt-1.5 text-xs text-gray-500">Schrijf minstens tien tekens.</p>
+                    <p class="mt-1.5 hidden text-xs font-semibold text-red-600 peer-user-invalid:block">Je bericht is te kort. Schrijf minstens tien tekens.</p>
+                </div>
+                
+                <div class="md:col-span-2 pt-2 border-t border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <button type="submit" class="rounded-lg bg-blue-600 px-6 py-2.5 font-semibold text-white hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors w-full sm:w-auto shadow-sm">
+                        Verstuur
+                    </button>
+                    <p class="text-xs text-gray-500">Ik gebruik je gegevens enkel om je te antwoorden.</p>
+                </div>
+            </form>
+        </article>
+      </main>
+
+      <aside class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm h-fit flex flex-col gap-8">
+        <div>
+            <h2 class="font-bold text-xl text-gray-900 mb-6">Contactgegevens</h2>
+            <ul class="flex flex-col gap-4">
+                <li>Wil je meer weten over mijn projecten of met mij in contact komen? Via de contactpagina kun je mij eenvoudig bereiken. Ik sta open voor nieuwe leerkansen, stages en interessante IT-projecten.
+ </li>
+                <li class="flex items-center gap-3">
+                  <a href="mailto:azidanmochraf@gmail.com" class="text-sm font-medium text-gray-700 hover:text-blue-700 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700 rounded-sm">azidanmochraf@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+      </aside>
+    </div>
+
+    
+    <footer class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between py-8 border-t border-gray-200 text-sm text-gray-500 mt-auto">
+      <p>&copy; 2026 Mohamed Achraf Azidan</p>
+    </footer>
+
+  </body>
+</html>
